@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --lightBlue: #65b4ca;
+    --darkBlue: #0969b0;
+    --blueGreen: #149bb3;
+    --gray: #cccccc;
+    --dark-gray: #aaaaaa;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 40vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 10vh;
+    font-family: "Press Start 2P", serif; 
+    background-color: black;   
+}
+
+
+.inline{
+    display: inline;
+}
+
+#main-container{
+    background-color: var(--gray);
+    padding: 15px;
+    border: 8px lightslategrey groove;
+    border-radius: 15px;
+    width: 100%;    
+}
+
+#submain-container{
+    padding-top: 20px;   
+    width: 100%;
+}
+
+.nameId-container{
+    background-color: var(--darkBlue);
+    padding: 4px 0;
+    font-size: 1.2rem;
+}
+
+.weight-container{
+    background-color: var(--blueGreen);
+    padding: 4px 0;
+    font-size: 0.8rem;    
+}
+
+
+#left-container{
+   width: 100%;
+   height: 100%;
+   position: relative;   
+   background-color: var(--lightBlue);
+   border: 4px var(--darkBlue) solid;
+   border-radius: 15px;
+   color: white;
+}
+
+#types{
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-size: 0.8rem;
+}
+
+#types>p{
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+#right-container{
+    width: 100%;
+    height: 100%;
+    padding-top: 15px; 
+}
+
+#text-container{   
+    text-indent: 10px;
+    overflow: hidden;
+    border-radius: 12px 0 4px 0;
+    width: 80%;   
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+#pokemon-img-container {
+    display: flex;
+    justify-content: center;
+    height: 70%;
+}
+
+table{
+   border: 4px var(--darkBlue) solid;
+   
+   color: white;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background-color: var(--lightBlue);
+   text-indent: 8px;
+   border-collapse: collapse;
+   font-size: 0.9rem;
+}
+
+td{
+    border: 1px solid var(--darkBlue);
+    padding: 4px; 
+    
+}
+
+thead{
+    background-color: var(--darkBlue);
+    
+}
+
+tbody tr td:nth-child(1) {
+    background-color: var(--blueGreen);
+}
+
+header{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.bug{
+    background-color: #1c4b27;
+}
+
+.dark{
+    background-color: #040706;
+}
+
+.dragon{
+    background-color: #448b95;
+}
+
+.electric{
+    background-color: #e3e329;
+}
+
+.fairy{
+    background-color: #971944;
+}
+
+.fighting{
+    background-color: #994025;
+}
+
+.fire{
+    background-color: #ab1f23;
+}
+
+.flying{
+    background-color: #49677d;
+}
+
+.ghost{
+    background-color: #33336b;
+}
+
+.grass{
+    background-color: #147b3d;
+}
+
+.ground{
+    background-color: #a9702c;
+}
+
+.ice{
+    background-color: #85d1f4;
+}
+
+.poison{
+    background-color: #5e2d88;
+}
+
+.psychic{
+    background-color: #a42a6c;
+}
+
+.normal{
+    background-color: #75515b;
+}
+
+.rock{
+    background-color: #48180b;
+}
+
+.steel{
+    background-color: #5f756d;
+}
+
+.water{
+    background-color: #1552e2;
+}
+
+#inputButton{
+    display: flex;
+    gap: 5px;
+    padding-top: 5px;
+    height: 25px;
+    
+}
+
+input{
+    font-family: inherit;
+    text-indent: 2px;
+    font-size: 0.9rem;
+    padding: 2px;  
+}
+
+button{
+    font-family: inherit;
+    padding: 2px 4px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--darkBlue);
+    color: white;
+}
+
+.searchText{
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        width: 70vw;
+    }
+
+    table{
+        font-size: 80%;
+    }
+
+    .nameId-container{
+        font-size: 90%;
+    }
+    
+    .weight-container, #types{
+        font-size: 70%;    
+    }
+
+    #inputButton{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    input{
+        padding: 5px;
+    }
+
+    button{
+        width: 50%;
+        margin: 0 auto;
+        padding: 8px;
+    }
+    
+    #searchText{
+        font-size: 80%;
+    }
+}
